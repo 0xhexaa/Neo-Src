@@ -1,0 +1,20 @@
+using System.CodeDom.Compiler;
+
+namespace Windows.Win32.UI.WindowsAndMessaging;
+
+[GeneratedCode("Microsoft.Windows.CsWin32", "0.3.269+368685089b.RR")]
+internal enum WINDOW_LONG_PTR_INDEX
+{
+	GWL_EXSTYLE = -20,
+	GWLP_HINSTANCE = -6,
+	GWLP_HWNDPARENT = -8,
+	GWLP_ID = -12,
+	GWL_STYLE = -16,
+	GWLP_USERDATA = -21,
+	GWLP_WNDPROC = -4,
+	GWL_HINSTANCE = GWLP_HINSTANCE,
+	GWL_ID = GWLP_ID,
+	GWL_USERDATA = GWLP_USERDATA,
+	GWL_WNDPROC = GWLP_WNDPROC,
+	GWL_HWNDPARENT = GWLP_HWNDPARENT
+}

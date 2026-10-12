@@ -1,0 +1,151 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>NeoLauncher</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>net10.0-windows10.0.19041.0</TargetFramework>
+    <TargetPlatformMinVersion>10.0.17763.0</TargetPlatformMinVersion>
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>14.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>app.ico</ApplicationIcon>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <RootNamespace />
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="NeoLauncher.Scripts.neoBridge.js" />
+    <EmbeddedResource Include="NeoLauncher.Scripts.neoBridge.js" LogicalName="NeoLauncher.Scripts.neoBridge.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Threading">
+      <HintPath>..\..\AppData\Local\NeoLauncher\current\System.Threading.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Win32.Registry">
+      <HintPath>..\..\AppData\Local\NeoLauncher\current\Microsoft.Win32.Registry.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Pipes">
+      <HintPath>..\..\AppData\Local\NeoLauncher\current\System.IO.Pipes.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WinUI">
+      <HintPath>..\..\AppData\Local\NeoLauncher\current\Microsoft.WinUI.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.InteropServices">
+      <HintPath>..\..\AppData\Local\NeoLauncher\current\System.Runtime.InteropServices.dll</HintPath>
+    </Reference>
+    <Reference Include="WinRT.Runtime">
+      <HintPath>..\..\AppData\Local\NeoLauncher\current\WinRT.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.InteractiveExperiences.Projection">
+      <HintPath>..\..\AppData\Local\NeoLauncher\current\Microsoft.InteractiveExperiences.Projection.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel">
+      <HintPath>..\..\AppData\Local\NeoLauncher\current\System.ComponentModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Windows.SDK.NET">
+      <HintPath>..\..\AppData\Local\NeoLauncher\current\Microsoft.Windows.SDK.NET.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections">
+      <HintPath>..\..\AppData\Local\NeoLauncher\current\System.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Json">
+      <HintPath>..\..\AppData\Local\NeoLauncher\current\System.Text.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.WebView2.Core.Projection">
+      <HintPath>..\..\AppData\Local\NeoLauncher\current\Microsoft.Web.WebView2.Core.Projection.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+      <HintPath>..\..\AppData\Local\NeoLauncher\current\System.Net.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection.Metadata">
+      <HintPath>..\..\AppData\Local\NeoLauncher\current\System.Reflection.Metadata.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Management">
+      <HintPath>..\..\AppData\Local\NeoLauncher\current\System.Management.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.RegularExpressions">
+      <HintPath>..\..\AppData\Local\NeoLauncher\current\System.Text.RegularExpressions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.Concurrent">
+      <HintPath>..\..\AppData\Local\NeoLauncher\current\System.Collections.Concurrent.dll</HintPath>
+    </Reference>
+    <Reference Include="Velopack">
+      <HintPath>..\..\AppData\Local\NeoLauncher\current\Velopack.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Principal.Windows">
+      <HintPath>..\..\AppData\Local\NeoLauncher\current\System.Security.Principal.Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.Process">
+      <HintPath>..\..\AppData\Local\NeoLauncher\current\System.Diagnostics.Process.dll</HintPath>
+    </Reference>
+    <Reference Include="BuildPatchServices">
+      <HintPath>..\..\AppData\Local\NeoLauncher\current\BuildPatchServices.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.FileSystem.DriveInfo">
+      <HintPath>..\..\AppData\Local\NeoLauncher\current\System.IO.FileSystem.DriveInfo.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Thread">
+      <HintPath>..\..\AppData\Local\NeoLauncher\current\System.Threading.Thread.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Linq">
+      <HintPath>..\..\AppData\Local\NeoLauncher\current\System.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Encoding.Extensions">
+      <HintPath>..\..\AppData\Local\NeoLauncher\current\System.Text.Encoding.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.ReaderWriter">
+      <HintPath>..\..\AppData\Local\NeoLauncher\current\System.Xml.ReaderWriter.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.WebSockets.Client">
+      <HintPath>..\..\AppData\Local\NeoLauncher\current\System.Net.WebSockets.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.WebSockets">
+      <HintPath>..\..\AppData\Local\NeoLauncher\current\System.Net.WebSockets.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Windows.ApplicationModel.Resources.Projection">
+      <HintPath>..\..\AppData\Local\NeoLauncher\current\Microsoft.Windows.ApplicationModel.Resources.Projection.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Memory">
+      <HintPath>..\..\AppData\Local\NeoLauncher\current\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.DependencyInjection.Abstractions">
+      <HintPath>..\..\AppData\Local\NeoLauncher\current\Microsoft.Extensions.DependencyInjection.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.DependencyInjection">
+      <HintPath>..\..\AppData\Local\NeoLauncher\current\Microsoft.Extensions.DependencyInjection.dll</HintPath>
+    </Reference>
+    <Reference Include="CommunityToolkit.WinUI.Controls.OpacityMaskView">
+      <HintPath>..\..\AppData\Local\NeoLauncher\current\CommunityToolkit.WinUI.Controls.OpacityMaskView.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.Immutable">
+      <HintPath>..\..\AppData\Local\NeoLauncher\current\System.Collections.Immutable.dll</HintPath>
+    </Reference>
+    <Reference Include="NuGet.Versioning">
+      <HintPath>..\..\AppData\Local\NeoLauncher\current\NuGet.Versioning.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.Primitives">
+      <HintPath>..\..\AppData\Local\NeoLauncher\current\System.ComponentModel.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Encodings.Web">
+      <HintPath>..\..\AppData\Local\NeoLauncher\current\System.Text.Encodings.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Primitives">
+      <HintPath>..\..\AppData\Local\NeoLauncher\current\System.Net.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Json">
+      <HintPath>..\..\AppData\Local\NeoLauncher\current\System.Net.Http.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography">
+      <HintPath>..\..\AppData\Local\NeoLauncher\current\System.Security.Cryptography.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.HttpUtility">
+      <HintPath>..\..\AppData\Local\NeoLauncher\current\System.Web.HttpUtility.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.Specialized">
+      <HintPath>..\..\AppData\Local\NeoLauncher\current\System.Collections.Specialized.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>
